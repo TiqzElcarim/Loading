@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TikTok Video Downloader – Save TikTok Without Watermark (HD, Free)</title>
+<meta name="description" content="Download TikTok videos without watermark in HD for free. Works on Android, iPhone and PC. Paste the link, tap download. No app, no sign-up.">
+<link rel="canonical" href="https://tiktoksave.site/">
+<meta name="theme-color" content="#0b0b12">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TikTok Video Downloader – No Watermark">
+<meta property="og:description" content="Save TikTok videos in HD without watermark. Free, fast, no app needed.">
+<meta property="og:url" content="https://tiktoksave.site/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23fe2c55'/%3E%3Cpath d='M38 28v44l36-22z' fill='%23fff'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"SaveClip TikTok Downloader","url":"https://tiktoksave.site/","applicationCategory":"MultimediaApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How do I download a TikTok video without watermark?","acceptedAnswer":{"@type":"Answer","text":"Copy the TikTok video link using Share then Copy link, paste it into the box on this page, tap Download, then choose HD or standard video."}},
+{"@type":"Question","name":"Is this TikTok downloader free?","acceptedAnswer":{"@type":"Answer","text":"Yes. It is free with no limit on how many videos you can save."}},
+{"@type":"Question","name":"Can I download TikTok videos on iPhone?","acceptedAnswer":{"@type":"Answer","text":"Yes. Open this site in Safari, paste the link, tap Download and choose Download when Safari asks. The video saves to the Files app and you can then add it to Photos."}},
+{"@type":"Question","name":"Can I save TikTok as MP3?","acceptedAnswer":{"@type":"Answer","text":"Yes. After pasting the link, tap the Audio (MP3) button to save the sound."}},
+{"@type":"Question","name":"Why can't I download some TikTok videos?","acceptedAnswer":{"@type":"Answer","text":"Private videos, deleted videos and some region-restricted videos cannot be fetched."}}
+]}
+</script>
+<!-- Analytics: paste your Cloudflare Web Analytics or Google Analytics snippet here -->
+
+<style>
+:root{--bg:#0b0b12;--card:#161622;--line:#262638;--text:#f4f4f8;--mute:#9a9ab0;--a:#25f4ee;--b:#fe2c55}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{background:radial-gradient(900px 500px at 50% -10%,#1d1d3a,var(--bg));color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100vh;line-height:1.6}
+.wrap{max-width:680px;margin:0 auto;padding:0 16px 48px}
+header{padding:20px 0;display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px}
+header a{color:inherit;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--a),var(--b));display:grid;place-items:center;color:#000;font-size:18px}
+h1{font-size:clamp(26px,7vw,38px);line-height:1.15;margin:18px 0 10px;text-align:center}
+h1 span{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mute);text-align:center;margin-bottom:24px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px}
+.row{display:flex;gap:8px}
+input{flex:1;min-width:0;background:#0f0f1a;border:1px solid var(--line);color:var(--text);border-radius:12px;padding:14px;font-size:16px;outline:none}
+input:focus{border-color:var(--a)}
+button{border:0;border-radius:12px;font-weight:700;font-size:15px;cursor:pointer;padding:0 18px;color:#000;background:linear-gradient(90deg,var(--a),#6ff7f2)}
+button:disabled{opacity:.6}
+.paste{background:#242438;color:var(--text);padding:0 14px}
+.go{width:100%;margin-top:10px;padding:14px;font-size:16px}
+.err{color:#ff7a90;margin-top:12px;font-size:14px;text-align:center;display:none}
+.res{display:none;margin-top:18px}
+.vid{display:flex;gap:14px}
+.vid img{width:110px;height:150px;object-fit:cover;border-radius:12px;background:#0f0f1a;flex-shrink:0}
+.meta{min-width:0}
+.meta b{overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;word-break:break-word}
+.meta small{color:var(--mute)}
+.dl{display:grid;gap:8px;margin-top:14px}
+.dl button{display:block;text-align:center;padding:14px;border-radius:12px;font-weight:700;color:#000;background:linear-gradient(90deg,var(--a),#6ff7f2);font-size:15px;width:100%}
+.dl .alt{background:#242438;color:var(--text)}
+.dl .hd{background:linear-gradient(90deg,var(--b),#ff7a90);color:#fff}
+.imgs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:12px}
+.imgs a{display:block}.imgs img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:8px}
+.steps{margin-top:30px;display:grid;gap:10px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;gap:12px}
+.step i{font-style:normal;width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--a),var(--b));color:#000;display:grid;place-items:center;font-weight:800;flex-shrink:0}
+.step p{color:var(--mute);font-size:14px}
+h2{font-size:20px;margin:36px 0 8px}
+h3{font-size:16px;margin:18px 0 6px}
+.txt p,.txt li{color:var(--mute);font-size:14.5px;margin-bottom:8px}
+.txt ol,.txt ul{padding-left:20px}
+.txt strong{color:var(--text)}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.feat div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;font-size:14px}
+.feat b{display:block;margin-bottom:2px}
+.feat span{color:var(--mute);font-size:13px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:8px}
+.faq summary{cursor:pointer;font-weight:600}
+.faq p{color:var(--mute);font-size:14px;margin-top:8px}
+nav.links{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;margin-top:36px;font-size:13px}
+nav.links a,footer a{color:var(--mute)}
+footer{margin-top:14px;text-align:center;color:var(--mute);font-size:12px}
+.ad{margin:18px 0}
+.spin{display:inline-block;width:16px;height:16px;border:2px solid #0004;border-top-color:#000;border-radius:50%;animation:s .7s linear infinite;vertical-align:-3px;margin-right:6px}
+@keyframes s{to{transform:rotate(360deg)}}
+@media(max-width:420px){.feat{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><a href="/"><div class="logo">▶</div>SaveClip</a></header>
+
+  <main>
+  <h1>TikTok Video Downloader <span>Without Watermark</span></h1>
+  <p class="sub">Paste a TikTok link, tap download. HD quality, no app, no sign-up.</p>
+
+  <div class="box">
+    <div class="row">
+      <input id="url" type="url" inputmode="url" placeholder="Paste TikTok link here…" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="TikTok video link">
+      <button class="paste" id="pasteBtn" type="button">Paste</button>
+    </div>
+    <button class="go" id="go" type="button">Download</button>
+    <div class="err" id="err"></div>
+
+    <div class="res" id="res">
+      <div class="vid">
+        <img id="cover" alt="TikTok video thumbnail">
+        <div class="meta"><b id="title"></b><small id="author"></small></div>
+      </div>
+      <div class="dl" id="dl"></div>
+      <div class="imgs" id="imgs"></div>
+    </div>
+  </div>
+
+  <!-- AD SLOT 1: paste your ad code here -->
+  <div class="ad" id="adSlot"></div>
+
+  <div class="steps">
+    <div class="step"><i>1</i><div><b>Copy the link</b><p>Open TikTok, tap Share on any video, then Copy link.</p></div></div>
+    <div class="step"><i>2</i><div><b>Paste it above</b><p>Tap Paste (or long-press the box) and hit Download.</p></div></div>
+    <div class="step"><i>3</i><div><b>Save the video</b><p>Pick HD or standard and it saves straight to your phone.</p></div></div>
+  </div>
+
+  <section class="txt">
+    <h2>Why use SaveClip</h2>
+    <div class="feat">
+      <div><b>No watermark</b><span>Clean video without the TikTok logo and username.</span></div>
+      <div><b>HD quality</b><span>Get the highest quality available.</span></div>
+      <div><b>MP3 audio</b><span>Save just the sound from any TikTok.</span></div>
+      <div><b>Free and private</b><span>No sign-up, no app, nothing to install.</span></div>
+    </div>
+
+    <h2>How to download TikTok videos without watermark</h2>
+    <h3>On Android</h3>
+    <ol>
+      <li>Open TikTok and find the video.</li>
+      <li>Tap <strong>Share</strong>, then <strong>Copy link</strong>.</li>
+      <li>Open this page in Chrome, paste the link, and tap <strong>Download</strong>.</li>
+      <li>Tap <strong>Download HD</strong>. The video saves to your Downloads or Gallery.</li>
+    </ol>
+    <h3>On iPhone</h3>
+    <ol>
+      <li>Copy the TikTok link the same way.</li>
+      <li>Open this page in <strong>Safari</strong> and paste the link.</li>
+      <li>Tap <strong>Download</strong>, then tap <strong>Download</strong> again when Safari asks.</li>
+      <li>Find the file in the <strong>Files</strong> app (Downloads), then tap Share and <strong>Save Video</strong> to add it to Photos.</li>
+    </ol>
+    <h3>On a computer</h3>
+    <p>Copy the video address from your browser's address bar, paste it into the box above, and click the download button.</p>
+    <p>You can also save <strong>TikTok to MP3</strong> with the audio button, and photo slideshows show their images below the video box. See also our <a href="/tiktok-to-mp3.html" style="color:var(--a)">TikTok to MP3</a> page.</p>
+  </section>
+
+  <!-- AD SLOT 2 (optional): paste a second ad here -->
+  <div class="ad" id="adSlot2"></div>
+
+  <section class="faq">
+    <h2>Frequently asked questions</h2>
+    <details><summary>How do I download a TikTok video without watermark?</summary><p>Copy the video link using Share then Copy link, paste it in the box at the top of this page, tap Download, then choose HD or standard video.</p></details>
+    <details><summary>Is it free?</summary><p>Yes, completely free with no limits on how many videos you can save.</p></details>
+    <details><summary>Can I download TikTok videos on iPhone?</summary><p>Yes. Use Safari, paste the link, tap Download and choose Download when asked. The video goes to the Files app, and you can then save it to Photos.</p></details>
+    <details><summary>Can I save TikTok as MP3?</summary><p>Yes. After pasting the link, tap the Audio (MP3) button.</p></details>
+    <details><summary>Where does the video save on my phone?</summary><p>Usually your Downloads folder or Gallery, depending on your browser.</p></details>
+    <details><summary>Why can't I download some videos?</summary><p>Private videos, deleted videos, and some region-restricted videos can't be fetched.</p></details>
+    <details><summary>Can I reuse downloaded videos?</summary><p>Videos belong to their creators. Download for personal use, and get permission and give credit before reposting anyone's content.</p></details>
+  </section>
+  </main>
+
+  <nav class="links">
+    <a href="/">Home</a>
+    <a href="/tiktok-to-mp3.html">TikTok to MP3</a>
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/dmca.html">DMCA &amp; Contact</a>
+  </nav>
+  <footer>
+    <p>SaveClip is not affiliated with TikTok or ByteDance. Please respect creators' rights.</p>
+  </footer>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const urlEl = $('url'), go = $('go'), err = $('err'), res = $('res');
+const API = '/.netlify/functions/download';
+
+function showErr(m){ err.textContent = m; err.style.display = 'block'; res.style.display = 'none'; }
+function clearErr(){ err.style.display = 'none'; }
+
+$('pasteBtn').onclick = async () => {
+  try { urlEl.value = (await navigator.clipboard.readText()).trim(); urlEl.focus(); }
+  catch { urlEl.focus(); showErr('Clipboard blocked. Long-press the box and choose Paste.'); }
+};
+
+urlEl.addEventListener('keydown', e => { if (e.key === 'Enter') go.click(); });
+
+function safeName(s){ return (s || 'tiktok').replace(/[^\w\s-]/g,'').trim().slice(0,40).replace(/\s+/g,'_') || 'tiktok'; }
+
+async function saveFile(href, name, btn){
+  const label = btn.textContent;
+  btn.innerHTML = '<span class="spin"></span>Saving…';
+  try {
+    const r = await fetch(href);
+    if (!r.ok) throw 0;
+    const blob = await r.blob();
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = name;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+  } catch {
+    window.open(href, '_blank');
+  }
+  btn.textContent = label;
+}
+
+function addBtn(text, href, name, cls){
+  const b = document.createElement('button');
+  b.textContent = text; if (cls) b.className = cls;
+  b.onclick = () => saveFile(href, name, b);
+  $('dl').appendChild(b);
+}
+
+go.onclick = async () => {
+  clearErr();
+  const url = urlEl.value.trim();
+  if (!/tiktok\.com\//i.test(url)) return showErr('Please paste a valid TikTok link.');
+  go.disabled = true; go.innerHTML = '<span class="spin"></span>Fetching…';
+  try {
+    const r = await fetch(API, { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ url }) });
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.error || 'Something went wrong.');
+
+    $('cover').src = d.cover || '';
+    $('title').textContent = d.title;
+    $('author').textContent = d.author ? '@' + d.author.replace(/^@/,'') : '';
+    $('dl').innerHTML = ''; $('imgs').innerHTML = '';
+    const base = safeName(d.title);
+
+    // Works with both the original function format and the newer "items" format
+    if (d.items) {
+      d.items.forEach((it, i) => addBtn((it.ext === 'mp3' ? '♫ ' : '⬇ ') + it.label, it.url, base + (i ? '_' + (i + 1) : '') + '.' + it.ext, it.kind));
+    } else {
+      if (d.videoHd) addBtn('⬇ Download HD (No Watermark)', d.videoHd, base + '_hd.mp4', 'hd');
+      if (d.video) addBtn('⬇ Download Video (No Watermark)', d.video, base + '.mp4');
+      if (d.music) addBtn('♫ Download Audio (MP3)', d.music, base + '.mp3', 'alt');
+    }
+
+    (d.images || []).forEach((src, i) => {
+      const a = document.createElement('a'); a.href = src; a.target = '_blank'; a.rel = 'noopener';
+      a.innerHTML = '<img loading="lazy" src="' + src + '" alt="Slide ' + (i+1) + '">';
+      $('imgs').appendChild(a);
+    });
+
+    res.style.display = 'block';
+    res.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  } catch (e) {
+    showErr(e.message || 'Something went wrong. Try again.');
+  } finally {
+    go.disabled = false; go.textContent = 'Download';
+  }
+};
+</script>
+</body>
+</html>
