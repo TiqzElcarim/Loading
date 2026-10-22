@@ -183,8 +183,22 @@ async function saveFile(href, name, btn){
 function addBtn(text, href, name, cls){
   const b = document.createElement('button');
   b.textContent = text; if (cls) b.className = cls;
-  b.onclick = () => saveFile(href, name, b);
+  b.onclick = () => { openAd(cls === 'hd' ? HD_GAP : OTHER_GAP); saveFile(href, name, b); };
   $('dl').appendChild(b);
+}
+
+// ===== SMARTLINK AD (Propush) =====
+// Paste your Propush direct smartlink between the quotes:
+const SMARTLINK = 'https://rm358.com/4/12096507?var=tiktoksave';
+const HD_GAP = 20;      // seconds between ads when HD button is tapped
+const OTHER_GAP = 120;  // seconds between ads for the other buttons
+function openAd(gapSec){
+  if (!/^https?:\/\//i.test(SMARTLINK)) return;
+  let last = 0;
+  try { last = +localStorage.getItem('lastAd') || 0; } catch(e) {}
+  if (Date.now() - last < gapSec * 1000) return;
+  try { localStorage.setItem('lastAd', Date.now()); } catch(e) {}
+  window.open(SMARTLINK, '_blank', 'noopener');
 }
 
 go.onclick = async () => {
